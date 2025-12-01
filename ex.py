@@ -42,3 +42,13 @@ while True:
         break
     else:
         print("Senha incorreta, tente novamente")
+
+        frase = input("Digite uma frase: ").lower()
+vogais = "aeiou"
+cont = 0
+
+for letra in frase:
+    if letra in vogais:
+        cont += 1
+
+print(f"Número de vogais: {cont}")
