@@ -52,3 +52,17 @@ for letra in frase:
         cont += 1
 
 print(f"Número de vogais: {cont}")
+
+itens = []
+
+print("Digite itens (digite 'fim' para encerrar):")
+
+while True:
+    item = input("> ")
+    if item.lower() == "fim":
+        break
+    itens.append(item)
+
+print("\nLista completa:")
+for i, item in enumerate(itens, 1):
+    print(f"{i}. {item}")
