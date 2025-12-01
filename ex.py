@@ -83,3 +83,23 @@ palavras = frase.split()
 
 print(f"Quantidade de palavras: {len(palavras)}")
 print("Lista de palavras:", palavras)
+
+n = int(input("Quantos alunos serão cadastrados? "))
+
+nomes = []
+notas = []
+
+for i in range(n):
+    nome = input(f"Nome do aluno {i+1}: ")
+    nota = float(input(f"Nota do aluno {nome}: "))
+    nomes.append(nome)
+    notas.append(nota)
+
+print("\nBoletim completo:")
+for nome, nota in zip(nomes, notas):
+    print(f"{nome}: {nota}")
+
+print("\nAlunos com nota >= 7:")
+for nome, nota in zip(nomes, notas):
+    if nota >= 7:
+        print(f"{nome}: {nota}")
