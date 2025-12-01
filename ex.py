@@ -20,3 +20,14 @@ else:
 
 for i in range(n, -1, -1):
     print(i)
+
+    soma = 0
+
+while True:
+    x = float(input("Digite um número (0 para parar): "))
+    if x == 0:
+        break
+    if x > 0:
+        soma += x
+
+print(f"Soma total: {soma}")
