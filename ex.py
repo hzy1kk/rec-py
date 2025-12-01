@@ -66,3 +66,13 @@ while True:
 print("\nLista completa:")
 for i, item in enumerate(itens, 1):
     print(f"{i}. {item}")
+
+    qtd = int(input("Quantos números quer informar? "))
+numeros = []
+
+for i in range(qtd):
+    x = float(input(f"Digite o {i+1}º número: "))
+    numeros.append(x)
+
+print("Maior número:", max(numeros))
+print("Menor número:", min(numeros))
