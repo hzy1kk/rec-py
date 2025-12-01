@@ -76,3 +76,10 @@ for i in range(qtd):
 
 print("Maior número:", max(numeros))
 print("Menor número:", min(numeros))
+
+frase = input("Digite uma frase: ")
+
+palavras = frase.split()
+
+print(f"Quantidade de palavras: {len(palavras)}")
+print("Lista de palavras:", palavras)
