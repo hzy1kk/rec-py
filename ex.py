@@ -15,3 +15,8 @@ elif idade <= 59:
     print("adulto")
 else:
     print("idoso")
+
+    n = int(input("Digite um número positivo: "))
+
+for i in range(n, -1, -1):
+    print(i)
