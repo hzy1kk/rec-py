@@ -31,3 +31,14 @@ while True:
         soma += x
 
 print(f"Soma total: {soma}")
+
+
+senha_correta = "python123"
+
+while True:
+    s = input("Digite a senha: ")
+    if s == senha_correta:
+        print("Acesso permitido")
+        break
+    else:
+        print("Senha incorreta, tente novamente")
